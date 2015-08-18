@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <script type="text/javascript">            
+            document.write("<i>Я учусь программировать на языке <b>JavaScript</b></i><br/>");
+    //Переменные
+            var x = 5;
+            var y = 7;
+            var abc = 7.5;
+            var hello_world = -5.1;
+            document.write("x=" + x + "<br/>y=" + y + "<br/>abc=" + abc + "<br/>");
+            
+            var myAge = 34;
+            document.write("Мой возраст " + myAge + " года<br/>");
+            
+    //Типы переменных
+            var i = 5; //целочисленные
+            var d = 7.3; //дабл - с двойной точностью (вещественные числа)
+            var str = "Привет"; //строковый тип
+            var b1 = true; //булевы переменные истина
+            var b2 = false; //булевы переменные ложь
+            document.write("i=" + i + "<br/>");
+            document.write("d=" + d + "<br/>");
+            document.write("str=" + str + "<br/>");
+            document.write("b1=" + b1 + "<br/>");
+            document.write("b2=" + b2 + "<br/><br/>");
+            
+            var name = "Олег";
+            var bool = true;
+            document.write("Меня зовут " + name + "<br/>");
+            document.write("Я мужчина? - " + bool + "<br/><br/>");
+            
+    //Арифметические операции
+            var x = 10;
+            var y = 4;
+            var summa = x + y;
+            document.write(x + " + " + y + " = " + summa + "<br/>");
+            document.write(x + " + " + y + " = " + (x+y) + "<br/>");
+            document.write(x + " - " + y + " = " + (x-y) + "<br/>");
+            document.write(x + " * " + y + " = " + (x*y) + "<br/>");
+            document.write(x + " / " + y + " = " + (x/y) + "<br/>");
+            document.write(x + " % " + y + " = " + (x%y) + "<br/>"); //отстаток от деления 10/4=2 и 2 осталось не деленное
+            
+            x = x + 2;
+            x += 2; //сокращенная запись x = x + 2;
+            document.write("x = " + x + "<br/>");
+            //Инкремент - увеличение на 1
+            x++; //сокращенная запись x = x + 1;
+            //Декремент - увеличение на 1
+            x--; //сокращенная запись x = x - 1;
+            document.write("<br/>");
+            
+    //Строковые операции
+            var str1 = "a";
+            var str2 = "b";
+            var str = str1 + str2;
+            document.write(str + "<br/>");
+            
+            var str1 = "10";
+            var str2 = "20";
+            var str = str1 + str2;
+            document.write(str + "<br/>");
+            
+            str1 = Number(str1);         //Преобразование строки в число
+            str2 = Number(str2);
+            var str = str1 + str2;
+            document.write(str + "<br/>");
+            
+    //Логические операции
+            var b = x > y;
+            document.write(x + " > " + y + " = " + b);
+            document.write("<br/>");
+            
+            var b = x < y;
+            document.write(x + " < " + y + " = " + b);
+            document.write("<br/>");
+            
+            var b = x >= y;
+            var b = x <= y;
+            
+            document.write("<table style=\"text-align: center;\" border='1'><tr><td>B1</td><td>B2</td><td>Отрицание B1</td><td>B1 и B2</td><td>B1 или B2</td><td>B1 ИСКЛЮЧАЮЩЕЕ ИЛИ B2</td></tr>");
+            var b1 = false;
+            var b2 = false;
+            document.write("<tr><td>" + b1 + "</td><td>" + b2 + "</td><td>" + (!b1) + "</td><td>" + (b1 && b2) + "</td><td>" + (b1 || b2) + "</td><td>" + (b1 ^ b2) + "</td></tr>");
+            var b1 = false;
+            var b2 = true;
+            document.write("<tr><td>" + b1 + "</td><td>" + b2 + "</td><td>" + (!b1) + "</td><td>" + (b1 && b2) + "</td><td>" + (b1 || b2) + "</td><td>" + (b1 ^ b2) + "</td></tr>");            
+            var b1 = true;
+            var b2 = false;            
+            document.write("<tr><td>" + b1 + "</td><td>" + b2 + "</td><td>" + (!b1) + "</td><td>" + (b1 && b2) + "</td><td>" + (b1 || b2) + "</td><td>" + (b1 ^ b2) + "</td></tr>");
+            var b1 = true;
+            var b2 = true;
+            document.write("<tr><td>" + b1 + "</td><td>" + b2 + "</td><td>" + (!b1) + "</td><td>" + (b1 && b2) + "</td><td>" + (b1 || b2) + "</td><td>" + (b1 ^ b2) + "</td></tr>");
+            document.write("</table><br/><br/>");
+            
+            /*
+            Логические операции
+            && - и
+            || - или
+            == - равно
+            = присвоить
+            != - не равно(проверка на неравенство)
+                        
+            
+            Побитовые операции - работа с двоичными числами - практически не используется
+            ^ - исключающее или 
+            5 & 3 - побитовое и
+            101 - двоичный формат 5
+            011 - двоичный формат 3
+            001 - двоичный формат 1
+            */
+            
+            //ДЗ
+            var z = 5;
+            var x = 7;
+            var c = 12;
+            var v = 5.5;
+            var b = 8;
+            document.write((5+7)/((12-5.5)*(5-8*12)));
+            document.write("<br/>");
+            document.write((z+x)/((c-v)*(z-b*c)));
+            document.write("<br/><br/>");
+            
+            var str1 = "17";
+            var str2 = "-5";
+            document.write(str1 + str2);
+            document.write("<br/>");
+            document.write(Number(str1) + Number(str2));
+            document.write("<br/><br/>");            
+            
+    //Условные операторы
+            
+            /*if(утвержение истина) {
+                //блок операторов
+            }
+            else {
+                //блок операторов необезательный
+            }
+            */
+            var tires = 4;
+            if(tires == 0){
+                document.write("Шин нет");
+            }
+            else {
+                document.write("Шины в наличии");
+            }
+            document.write("<br/>");
+            
+            if(tires == 0){
+                document.write("Шин нет");
+            }
+            else {
+                if(tires < 4)
+                document.write("Полного комплекта нет");
+                else document.write("Шин достаточно");
+            }
+            document.write("<br/>");
+            
+            //switch(case)
+            switch(tires) {
+                case 0:
+                document.write("Шин нет");
+                break;
+                case 1: {
+                    document.write("В наличии одна шина<br/>");
+                    document.write("Внимание только одна!");
+                break;
+                }                
+                case 2:
+                document.write("В наличии две шины");
+                break;
+                case 3:
+                document.write("В наличии три шины");
+                break;
+                case 4:
+                document.write("В наличии четыре шины - полный комплект");
+                break;
+                default: document.write("Шин много");
+            }
+            document.write("<br/><br/>");
+            
+            //ДЗ
+            var bool1 = true;
+            if(bool1 == true)
+            document.write("Я мужчина<br/>");
+            else document.write("Я женщина<br/>");
+            
+            var myAge = 81;
+            if(myAge < 18){
+            document.write("У меня юный возраст");
+            }
+            else {
+            if(myAge >= 18 && myAge <= 30)
+            document.write("Я молодой");
+            if(myAge >= 31 && myAge <= 50)
+            document.write("Я взрослый");
+            if(myAge >= 51 && myAge <= 80)
+            document.write("Я зрелый");
+            if (myAge > 80)
+            document.write("Я старый");
+            }
+            document.write("<br/><br/>");
+            
+            
+    //ЦИКЛЫ
+            //Цикл for
+            for (var i = 0; i < 10; i++){   //фигурные скобки нужны при двух и более операторах(выполнение операциий более 1-й)
+                document.write("Привет! ");
+            }
+            document.write("<br/>");
+            
+            for (var i = 0; i < 10; i++)
+                document.write("Привет! ");                
+            document.write("<br/>");
+            
+            for (var i = 0; i < 10; i+=2)
+                document.write(" Привет! ");     //если нет фигурных скобок первая оперция выполнится в цикле а вторая по завершению цикла
+                document.write( i );    //выполнится по завершению цикла
+                document.write("<br/>");
+                
+            //Цикл while
+            var i = 1;
+            var summa = 0;
+            while (i <= 100) {
+                summa += i;
+                i++;
+            }
+            document.write(summa);
+            document.write("<br/>");
+            
+            //Цикл do {}while - всегда выполняется как минимум один раз до проверки условия
+            i = 1000;
+            do {
+                document.write(i);                                
+            } while (i < 100);
+            document.write("<br/>");
+            
+            for (var i=0; i < 10; i++) {
+                if((i%3 == 0) && (i != 0)) continue; //пропускаем в цикле условие когда счетчик кратный 3
+                if (i == 8) break; //когда счетчик равен 8 выйдем(остановим) из цикла
+                document.write(i + " ");
+            }
+            document.write("<br/><br/>");
+                        
+            //ДЗ
+            document.write("ТАБЛИЦА УМНОЖЕНИЯ <table style=\"text-align: center;\" border='1';>");
+            for (var i = 1; i < 10; i++){
+                for ( var j = 1; j < 10; j++) {
+                    var result = i*j;
+                    document.write("<td style=\"text-align: center;\" width=30px; height=30px>" + result + "</td>" );                                       
+                }                
+                document.write("<tr></tr>" );                
+            }            
+            document.write("</table>");
+            document.write("<br/><br/>");
+            
+    //Методы alert(), confirm(), prompt() - общение с пользователем
+            //alert()
+            var var1 = "peoples!";
+            alert("Hi " + var1);
+            
+            //confirm() - окно с запросом вернет либо true либо false            
+            if(confirm("Вы смельчак?")) {
+                alert("Вы уверенный в себе человек")
+            }
+            else {
+                alert("Вы не уверенный в себе человек")
+            }
+            
+            //prompt() - позволяет получать данные от пользователя которые он вводит в окно
+            var x = Number(prompt("Введите первое число"));
+            var y = Number(prompt("Введите второе число"));
+            alert("Сумма введенных Вами чисел " + x + " и " + y + " равна " + (x+y));
+                                        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
+

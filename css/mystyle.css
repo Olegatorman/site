@@ -1,0 +1,549 @@
+﻿body
+{
+	background-color: #151424;
+	background-image: url('../images/bg000000.jpg');
+	background-repeat: no-repeat;
+	color: #646464;
+	font-family: Tahoma;
+	font-size: 12px;
+	margin: 0;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.maindiv
+{
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding: 0;
+	width: 900px;
+}
+#forbody
+{
+	padding: 20px;
+}
+#main_h1
+{
+	color: #2C2C2C;
+	font-size: 16px;
+	margin-bottom: 20px;
+    float: left;
+}
+
+#beauty a {
+    float: right;
+    display: block;
+    border: 2px solid #7E7F83;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #3392BE;
+    padding: 2px 10px;
+    background: #FFF600;
+}
+
+#beauty a:hover {
+    color: #FFF600;
+    background: #3392BE;
+}
+
+h2
+{
+	color: #2C2C2C;
+	font-size: 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+p
+{
+	margin-left: 0;
+}
+p strong
+{
+	color: #2C2C2C;
+}
+h3
+{
+	color: #2C2C2C;
+}
+.mototable
+{
+	border: 1px solid #cccccc;
+	margin-top: 15px;
+}
+.mototable thead tr
+{
+	background-color: #f6f6f6;
+	height: 20px;
+	padding-left: 20px;
+}
+.mototable tbody tr td
+{
+	padding-left: 20px;
+	text-align: left;
+}
+#myform div
+{
+	margin: 20px;
+}
+#bigform
+{
+	width: 850px;
+}
+#bigform span
+{
+	color: #2c2c2c;
+	font-size: 11px;    
+}
+#div_form_1
+{
+	float: right;
+	width: 420px;
+}
+#div_form_2
+{
+	width: 420px;
+}
+#div_form_1 #days
+{
+	margin-left: 15px;
+}
+#my_button, select
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+	color: #2C2C2C;
+	font-size: 11px;
+	margin-left: 3px;
+}
+a
+{
+	color: #505391;
+}
+fieldset
+{
+	background-color: #e7e7f0;
+	border: 1px solid #cccccc;
+	padding: 15px;
+	width: 825px;
+}
+#innerfieldset, #innerfieldset2
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	width: 385px;
+}
+legend
+{
+	color: #2c2c2c;
+	font-size: 11px;
+}
+input
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+	font-size: 11px;
+}
+textarea
+{
+	background-color: #f6f6f6;
+	border: 1px solid #cccccc;
+}
+#sale
+{
+	margin-top: 20px;
+}
+
+.new {
+    border: 1px solid #333333;
+    background-color: #e4d7e8;
+    padding: 5px;
+}
+
+.svet {
+    background-color: #1F233C;
+    color: #ffffff;
+}
+
+#formHide {
+    text-decoration: underline;
+    margin: 0 20px 10px 0;
+    cursor: pointer;
+    float: left;   
+}
+
+#formColor {
+    text-decoration: underline;
+    margin: 0 0 10px 10px;
+    cursor: pointer;               
+}
+
+/*Галерея*/
+#gallery {
+    padding: 20px;
+    border:1px solid #cccccc;
+    width: 483px;
+    margin: 10px auto;
+    height: 380px;
+    display: none;
+}
+
+#big {
+    background-image: url("../images/gal/loader.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 483px;
+    height: 302px;
+    border:1px dotted #cccccc;
+    }
+
+#small {
+    margin-top: 10px;
+    margin-left: 33px;
+     
+}
+
+#small a img{
+    border:none;     
+}
+
+#switchGalery {
+    text-decoration: underline;
+    margin: 10px;
+    cursor: pointer;    
+}
+
+.onFocus {
+    border:2px solid green;
+    background-color:#c6f6f6;
+}
+
+/*Слайдер*/
+#slider-range {
+    width: 380px;
+}
+
+/*Кнопка подсказка*/
+#help {
+    cursor: pointer;
+    margin-left:5px;
+}
+
+/* Картинки внутри табов и внутри аккордеона */
+#tabs img, #accordion img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+/*Прогрессбар*/
+.ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  
+/* Стили для блока распродажи */
+#mycart {
+    width: 835px; 
+    height: 200px; 
+    border: 2px solid #f6f6f6; 
+    margin: 20px;
+    display: block;
+}
+
+
+.forhelmets {
+    width: 835px; height: 200px; margin: 20px; border: 2px solid #f6f6f6; display: block; 
+}
+
+.highlight {
+    border: 2px solid green!important;
+    
+}
+
+#myclear {
+    text-align: right;  line-height: 38px;
+    display: none;
+}
+
+#checkout {
+    margin-left: 15px; float: right; cursor: pointer; border: none;
+}
+
+#checkForm {
+    display: inline;
+}
+
+#forHelmets div, #mycart div {
+	float: left;
+}
+
+/*Сортировка*/
+#helpDiv{
+    float: left;
+    width: 350px;
+    height: 360px;
+    margin-right: 10px;
+}
+#sortable { list-style-type: none; margin: 0; padding: 0; }
+#sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+
+/*Кнопка Подобать мотоцикл*/
+#podbor {
+    border: none;
+    margin-top: 15px;
+}
+
+/*Эффект - Selectable - цвета */
+#helpColor {
+    float: left;
+    width: 480px;
+    height: 360px;
+    
+}
+#selectable .ui-selecting { background: #7d6285; }
+#selectable .ui-selected { background: green; color: white; }
+#selectable { list-style-type: none; margin: 0; padding: 0;}
+#selectable li { margin: 3px; padding: 4px; float: left; width: 220px; height: 148px; font-size: 4em; text-align: center; }
+
+#mytextarea {
+    width: 380px;
+    height: 200px;
+}
+
+.clear {
+    clear: both;
+}
+
+#zoom {
+    width: 32px;
+    height: 22px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#switch {
+    width: 32px;
+    height: 22px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#zoomIn {
+    width: 16px;
+    height: 22px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#zoomOut {
+    width: 16px;
+    height: 22px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.forP {
+    font-size: 15px;
+}
+
+.forP1 {
+    color: #C60000;
+}
+
+.forP2 {
+    color: #007100;
+}
+
+/* megaMenu */
+ul#topnav {
+	margin: 0; padding: 0;
+	float:left;
+	width: 100%;
+	list-style: none;
+	font-size: 1.1em;
+    background: #000000 url(../images/menu_bg.png) repeat-x;
+    margin-bottom: 10px;
+}
+ul#topnav li {
+	float: left;
+	margin: 0; padding: 0;
+	position: relative; /*--Important--*/
+}
+ul#topnav li a {
+	float: left;
+	text-indent: -9999px; /*--Push text off of page--*/
+	height: 44px;
+}
+ul#topnav li:hover a, ul#topnav li a:hover { background-position: left bottom; } /*--Hover State--*/
+ul#topnav a.home {
+	background: url(../images/main.png) no-repeat;
+	width: 98px;
+}
+ul#topnav a.products {
+	background: url(../images/products.png) no-repeat;
+	width: 141px;
+    background-position: 0 -44px;
+}
+ul#topnav a.sale {
+	background: url(../images/sale.png) no-repeat;
+	width: 129px;
+}
+ul#topnav a.community {
+	background: url(../images/forum.png) no-repeat;
+	width: 92px;
+}
+ul#topnav a.store {
+	background: url(../images/about.png) no-repeat;
+	width: 83px;
+}
+
+ul#topnav li .sub {
+	position: absolute; /*--Important--*/
+	top: 44px; left: 0;
+	z-index: 99999;
+	background: #000000 url(../images/sub_bg.png) repeat-x; /*--Background gradient--*/
+	padding: 20px 20px 20px;
+	float: left;
+	/*--Bottom right rounded corner--*/
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	/*--Bottom left rounded corner--*/
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	display: none; /*--Hidden for those with js turned off--*/
+}
+ul#topnav li .row { /*--If needed to break out into rows--*/
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+ul#topnav li .sub ul{
+	list-style: none;
+	margin: 0; padding: 0;
+	width: 150px;
+	float: left;
+}
+ul#topnav .sub ul li {
+	width: 100%; /*--Override parent list item--*/
+	color: #fff;
+}
+ul#topnav .sub ul li h2 { /*--Sub nav heading style--*/
+	padding: 0;  margin: 0;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+ul#topnav .sub ul li h2 a { /*--Sub nav heading link style--*/
+	padding: 5px 0;
+	background-image: none;
+	color: #e8e000;
+}
+ul#topnav .sub ul li a {
+	float: none;
+	text-indent: 0; /*--Override text-indent from parent list item--*/
+	height: auto; /*--Override height from parent list item--*/
+	background: url(../images/arrow.png) no-repeat -2px 9px;
+	padding: 7px 5px 7px 15px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+ul#topnav .sub ul li a:hover {
+	color: #ddd;
+	background-position: 0px 9px ;/*--Override background position--*/
+}
+
+/*-- КАРУСЕЛЬ --*/
+/* Основной блок карусели*/
+#carousel1 {
+    width:850px; 
+    height:450px; 
+    position: relative; 
+    border: 2px solid #cccccc; 
+    background:#fff url('../images/carousel/bg.jpg'); 
+    background-repeat: no-repeat; 
+    overflow:scroll;
+    margin: 10px auto;
+}
+
+/* Внутренний блок */
+#innerCarousel {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    display: block;
+}
+
+#carousel1 img {
+    border: none;
+}
+
+#buttonLeft {
+    width: 31px;
+    height: 46px;
+    background-image: url("../images/carousel/left.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    cursor: pointer;
+}
+
+#buttonRight {
+    width: 31px;
+    height: 46px;
+    background-image: url("../images/carousel/right.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/*--Zoom эффект--*/
+
+#imgYamaha {
+    border:2px solid #CCCCCC; 
+    float: left; 
+    width: 300px; 
+    margin-bottom: 20px;
+    }
+    
+#Yamaha a img {
+    border: none;
+    }
+
+#galleryYamaha {
+    margin-left: 10px; 
+    width: 490px; 
+    float: left; 
+    padding-top: 0;
+    }
+    
+#Yamaha h3 {
+    padding-top: 0px;
+    margin-top: 0px;
+    clear: both;
+}
+
+.th {
+    float: left; 
+    width: 100px;
+    margin: 0 10px 10px 0;
+    border: 2px solid #cccccc;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+		<title>Мотоциклы на Javascript-2</title>
+		<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+        <link href="css/slimbox2.css" rel="stylesheet" type="text/css" />
+        <link href="css/cloud-zoom.css" rel="stylesheet" type="text/css" />              
+        <script src="js/jquery-1.6.4.js" type="text/javascript"></script>
+        <script src="js/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+        <script src="js/megaMenu.js" type="text/javascript"></script>
+        <script src="js/scriptsForIndex2.js" type="text/javascript"></script>
+        <script src="js/cloud-carousel.1.0.4.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="js/slimbox2.js" type="text/javascript"></script>
+        <script src="js/cloud-zoom.1.0.2.min.js" type="text/javascript"></script>       
+                        
+	</head>
+	<body>
+		<!-- Общий div для всей страницы -->
+		<div class="maindiv" id="main_div">
+			<!-- Блок хедера (шапка сайта) -->
+			<div id="forheader">
+				<img src="images/logo.jpg" width="900" height="108" alt="Хедер" title="Шапка сайта" />
+			</div>
+			<!-- Конец блока хедера -->
+            <!-- Блок megaMenu -->
+            <ul id="topnav">
+                <li><a href="#" class="home">Главная</a></li>
+                <li>
+                	<a href="#" class="products">Мотоциклы</a>
+                    <div class="sub">
+                        <ul>
+                            <li>
+                                <h2><a href="#">Туристические</a></h2>
+                            </li>
+                            <li><img src="images/turist.png" width="130" height="65" /></li>
+                            <li><a href="#">Honda</a></li>
+                            <li><a href="#">Yamaha</a></li>
+                            <li><a href="#">Harley-Davidson</a></li>
+                            <li><a href="#">BMW</a></li>
+                            <li><a href="#">Suzuki</a></li>                                                                                    
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2><a href="#">Городские</a></h2>
+                            </li>
+                            <li><img src="images/city.png" width="130" height="65" /></li>
+                            <li><a href="#">ИЖ Планета Спорт</a></li>
+                            <li><a href="#">JAVA</a></li>
+                            <li><a href="#">Скутера</a></li>                            
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2><a href="#">Кроссовые</a></h2>
+                            </li>
+                            <li><img src="images/cross.png" width="130" height="65" /></li>
+                            <li><a href="#">КТМ</a></li>
+                            <li><a href="#">Yamaha</a></li>
+                            <li><a href="#">BMW</a></li>
+                            <li><a href="#">Honda</a></li>
+                            <li><a href="#">Kawasaki</a></li>                                                                                    
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2><a href="#">Гоночные</a></h2>
+                            </li>
+                            <li><img src="images/race.png" width="130" height="65" /></li>
+                            <li><a href="#">Ducati</a></li>
+                            <li><a href="#">Honda</a></li>
+                            <li><a href="#">Kawasaki</a></li>
+                            <li><a href="#">Yamaha</a></li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" class="sale">Распродажа</a></li>
+                <li><a href="#" class="community">Форум</a></li>
+                <li><a href="#" class="store">О Нас</a></li>
+            </ul>            
+            <!-- Конец блока megaMenu -->
+			<div id="forbody">
+                <!-- Карусель -->
+                <!-- С увеличением	-->
+				<div id="carousel1"> 
+					<div id="innerCarousel">
+						<a href="images/carousel/1_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/1.jpg" alt="Путешествия на мотоцикле" /></a>
+						<a href="images/carousel/2_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/2.jpg" alt="Ночные гонки" /></a>
+						<a href="images/carousel/3_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/3.jpg" alt="Гонки по автобанам" /></a>
+						<a href="images/carousel/4_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/4.jpg" alt="Городские заезды" /></a>
+						<a href="images/carousel/5_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/5.jpg" alt="Мотокросс" /></a>
+						<a href="images/carousel/6_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/6.jpg" alt="Дальние выезды" /></a>
+						<a href="images/carousel/7_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/7.jpg" alt="На харлее с девушкой" /></a>
+						<a href="images/carousel/8_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/8.jpg" alt="Семьей в горы" /></a>
+						<a href="images/carousel/9_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/9.jpg" alt="По бездорожью" /></a>
+						<a href="images/carousel/10_big.jpg" rel="lightbox"><img class="cloudcarousel" src="images/carousel/10.jpg" alt="Прыжки с адреналином" /></a>
+					</div>
+                    <div id="buttonLeft"></div>
+					<div id="buttonRight"></div>
+				</div>
+                <div id="alt"></div>
+                <!--Конец Карусели -->
+                
+                <!-- Zoom эффект -->
+                <h2>Zoom эффект</h2>
+                               
+               <div id="Yamaha">
+            	<div id="imgYamaha">
+            	<a href="images/zoom/yamaha_big.jpg" class="cloud-zoom" id="zoom1" rel="adjustX:10, adjustY:-70, zoomWidth: 535, zoomHeight: 300, position: 'right', tint:'#f6f6f6', tintOpacity:0.8, smoothMove: 10 "><img src="images/zoom/yamaha_small.jpg" width="300" height="194" title="Yamaha WR450F 2010" alt="" /></a>
+                <!--
+                adjustX:10 - регулировка положения окна увеличения на странице по Х в пикселях
+                adjustY:-70 - регулировка положения окна увеличения на странице по Y в пикселях
+                zoomWidth: 535 - размер ширины окна увеличения в пикселях
+                zoomHeight: 300 - размер высоты окна увеличения в пикселях
+                position: 'right' - позиция окна увеличения относительно основного
+                tint:'#f6f6f6' - цвет затемнения основного окна с изображением
+                tintOpacity:0.5 - коэффициент затемнения основного изображения 
+                lensOpacity: 0.5 - коэффициент затемнения лупы просмотра на основном изображении (работает если не задан параметр tint)
+                softFocus: true/false - мягкий фокус (отсутствие резкости) основного изображения
+                smoothMove: 10 - плавность передвижения изображения в окне увеличения
+                showTitle: true/false - показывать/непоказывать заголовок(атрибут title) увеличиваемой(маленькой) картинки в окне увеличения
+                titleOpacity: 0.5 - коэффициент прозрачности заголовка
+                -->
+            	</div>
+            	<div id="galleryYamaha">
+                <div class="th"><a href="images/zoom/back_big.jpg" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'images/zoom/back_small.jpg' "><img src="images/zoom/back_th.jpg" width="100" height="65" /></a></div>
+                <div class="th"><a href="images/zoom/black_big.jpg" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'images/zoom/black_small.jpg' "><img src="images/zoom/black_th.jpg" width="100" height="65" /></a></div>
+                <div class="th"><a href="images/zoom/kawa_big.jpg" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'images/zoom/kawa_small.jpg' "><img src="images/zoom/kawa_th.jpg" width="100" height="65" /></a></div>
+                <div class="th"><a href="images/zoom/yamaha_big.jpg" class="cloud-zoom-gallery" rel="useZoom: 'zoom1', smallImage: 'images/zoom/yamaha_small.jpg' "><img src="images/zoom/yamaha_th.jpg" width="100" height="65" /></a></div>
+            	</div>
+                <h3>WR450F '10</h3>
+            		<p>Еще не построено более крепкого внедорожного мотоцикла, чем серия эндуро Yamaha 
+            			WR. Со своей выдающейся мощностью и высокотехнологичным алюминиевым шасси, 
+            			WR450F является одной из самых впечатляющих машин класса Е2 из доступных на 
+            			сегодняшний день. </p>
+            		<p>Волей к победе пропитана каждая клетка организма Yamaha, и под каким углом бы Вы 
+            			не смотрели на WR450F, вы увидите благородные корни этого внедорожного 
+            			мотоцикла. Пятиклапанный двигатель рвется вперед в небывалом диапазоне низких и средних 
+            			оборотов, что дает непревзойденные характеристики в кантри-кроссах. А алюминиевое 
+            			шасси, неоднократно побеждавшее в мировых Гран-при, построено для максимальной 
+            			управляемости в самых суровых условиях.</p>
+            	<p>По производству мотоциклов японская корпорация Yamaha Motor входит в тройку 
+            		мировых лидеров, ежегодно поставляя на внутренний и внешний рынок около четырех 
+            		миллионов мотоциклов Yamaha . По объемам продаж мотоциклы Yamaha опережают продукцию 
+            		других всемирно известных производителей и считаются классикой мотоциклетной 
+            		техники. Дорожный мотоцикл Yamaha характеризуется малым весом, простотой 
+            		конструкции и предоставляет отличную возможность начать совершенствоваться в езде. 
+            		Спортивный мотоцикл Yamaha не имеет себе равных по динамике и маневренности, а надежные 
+            		тормоза обеспечивают безопасность в любых ситуациях. Кроссовые мотоциклы Ямаха 
+            		являются воплощением высокотехнологичных решений и самого современного дизайна.
+            		<p>Мотоцикл Yamaha – это мотоцикл с прошлым, настоящим и будущим.</p>
+            		<p><strong>Ремонт мотоциклов</strong></p>
+            		<p>Сервисный центр Yamaha осуществляет ремонт мотоциклов и имеет диагностический 
+            			стенд, позволяющий в условиях, имитирующих реальное движение мотоцикла, не только 
+            			снимать характеристики, но и регулировать их. Ремонт мотоциклов контролируют 
+            			японский шеф-механик и технический специалист.</p>
+            
+            </div><!-- Конец Zoom эффекта -->               
+				
+			</div><!-- Конец блока forbody -->
+			<!-- Блок футера -->
+			<div id="forfooter">
+				<img src="images/footer.jpg" width="900" height="67" alt="Футер" title="Производители" />
+			</div>
+			<!-- Конец футера -->
+		</div>        
+	</body>
+</html>

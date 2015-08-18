@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+		<title>Мотоциклы на Javascript</title>
+		<link href="css/mystyle.css" rel="stylesheet" type="text/css" />        
+        <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" />        
+        <script src="js/jquery-1.6.4.js" type="text/javascript"></script>
+        <script src="js/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
+        <script src="js/allscripts.js" type="text/javascript"></script>
+        <script src="js/megaMenu.js" type="text/javascript"></script>
+                        
+	</head>
+	<body>
+		<!-- Общий div для всей страницы -->
+		<div class="maindiv" id="main_div">
+			<!-- Блок хедера (шапка сайта) -->
+			<div id="forheader">
+				<img src="images/logo.jpg" width="900" height="108" alt="Хедер" title="Шапка сайта" />
+			</div>
+			<!-- Конец блока хедера -->
+            <!-- Блок megaMenu -->
+            <ul id="topnav">
+                <li><a href="#" class="home">Главная</a></li>
+                <li>
+                	<a href="#" class="products">Мотоциклы</a>
+                    <div class="sub">
+                        <ul>
+                            <li>
+                                <h2><a href="#">Туристические</a></h2>
+                            </li>
+                            <li><img src="images/turist.png" width="130" height="65" /></li>
+                            <li><a href="#">Honda</a></li>
+                            <li><a href="#">Yamaha</a></li>
+                            <li><a href="#">Harley-Davidson</a></li>
+                            <li><a href="#">BMW</a></li>
+                            <li><a href="#">Suzuki</a></li>                                                                                    
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2><a href="#">Городские</a></h2>
+                            </li>
+                            <li><img src="images/city.png" width="130" height="65" /></li>
+                            <li><a href="#">ИЖ Планета Спорт</a></li>
+                            <li><a href="#">JAVA</a></li>
+                            <li><a href="#">Скутера</a></li>                            
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2><a href="#">Кроссовые</a></h2>
+                            </li>
+                            <li><img src="images/cross.png" width="130" height="65" /></li>
+                            <li><a href="#">КТМ</a></li>
+                            <li><a href="#">Yamaha</a></li>
+                            <li><a href="#">BMW</a></li>
+                            <li><a href="#">Honda</a></li>
+                            <li><a href="#">Kawasaki</a></li>                                                                                    
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2><a href="#">Гоночные</a></h2>
+                            </li>
+                            <li><img src="images/race.png" width="130" height="65" /></li>
+                            <li><a href="#">Ducati</a></li>
+                            <li><a href="#">Honda</a></li>
+                            <li><a href="#">Kawasaki</a></li>
+                            <li><a href="#">Yamaha</a></li>                            
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" class="sale">Распродажа</a></li>
+                <li><a href="#" class="community">Форум</a></li>
+                <li><a href="#" class="store">О Нас</a></li>
+            </ul>            
+            <!-- Конец блока megaMenu -->
+			<div id="forbody">
+				<h1 id="main_h1">Добро пожаловать на сайт компании MotoRent!</h1>
+                <h1 id="beauty"><a href="index2.html">КРАСАВЦЫ</a></h1>
+                <div class="clear"></div>
+				<p><span class="pq">Мотоцикл — двухколёсное транспортное средство</span>, с коляской или без неё, имеющее максимальную массу не более 400 кг и/или 
+					двигатель с объёмом более 50 см? в случае двигателя внутреннего сгорания (и/или 
+					номинальную мощность более 4 кВт в случае электродвигателя. Впрочем, нормы 
+					различаются в разных странах.) </p>
+				<!-- Блок с 4-мя изображениями -->
+                <!--                
+				<div id="div_for_img">
+                    <img id="img_1" src="images/moto4.jpg" width="200" height="125" alt="Мотоцикл 1" />
+                    <img id="img_2" src="images/moto2.jpg" width="200" height="125" alt="Мотоцикл 2" />
+                    <img id="img_3" src="images/moto3.jpg" width="200" height="125" alt="Мотоцикл 3" />
+                    <img id="img_4" src="images/moto1.jpg" width="200" height="125" alt="Мотоцикл 4" />
+                </div>
+                -->                                
+                <!--Закладки -->
+                <div id="tabs">
+                  <ul>
+                    <li><a href="#tabs-1">Харлей Дэвидсон</a></li>
+                    <li><a href="#tabs-2">Кроссовый мотоцикл</a></li>
+                    <li><a href="#tabs-3">Гоночный мотоцикл</a></li>
+                    <li><a href="#tabs-4">Концептуальный мотоцикл</a></li>
+                  </ul>
+                  <div id="tabs-1">
+                    <img id="img_1" src="images/moto4.jpg" width="200" height="125" alt="Мотоцикл 1" />
+                    <p>
+                    Особенность маркетинговой политики Harley — создание сообщества людей, лояльных 
+					именно к этой марке. Помимо мотоциклов, компания выпускает множество товаров 
+					широкого потребления с эмблемой Harley-Davidson. Одежда, обувь, мебель, посуда, 
+					выпускаемые под этой маркой, позволяет создать своеобразный стиль жизни от 
+					Харли, 
+					который делает мотоцикл по-настоящему культовым. Также каждый владелец любого 
+					из 
+					мотоциклов Харли имеет возможность вступить в созданное фирмой сообщество 
+					владельцев мотоциклов этой марки (H.O.G. — Harley Owners Group). На сегодня 
+					H.O.G. — 
+					самый многочисленный клуб любителей мотоциклов в мире.
+                    </p>
+                  </div>
+                  <div id="tabs-2">
+                    <img id="img_2" src="images/moto2.jpg" width="200" height="125" alt="Мотоцикл 2" />
+                    <p>
+                    Кроссовые мотоциклы предназначенны для различного рода спортивных состязаний по 
+					пересеченной местности. Кроссовые мотоциклы зачастую снабжены двухтактными 
+					двигателями. Легкий вес, прочная рама, надежная длинноходная подвеска плюс 
+					мощный 
+					мотор - это кроссовые мотоциклы. Часто кроссовые мотоциклы не оборудованы 
+					светотехническими приборами и заводятся кик-стартером. Мотоциклы этого класса 
+					выпускаются 
+					также и в миниатюрных версиях - специально для детей и детских соревнований.
+                    </p>
+                  </div>
+                  <div id="tabs-3">
+                    <img id="img_3" src="images/moto3.jpg" width="200" height="125" alt="Мотоцикл 3" />                  
+                    <p>
+                    Основа спортбайка - энерговооруженность, основа конструкций спортбайков - 
+					максимальная мощность при минимальной массе. Остальное почти не важно. 
+					Владельцу 
+					спортбайка не нужно беспокоиться о ломовой тяге на низах, мотор спортбайка 
+					любит жить 
+					в режиме, когда стрелка у красной черты тахометра. Спортбайки - это высочайшие 
+					технологии мотопрома, в них собраны все самые современные разработки. У 
+					спортбайков лучшая маневренность, динамика разгонов и эффективность торможения 
+					- это 
+					конвейерные версии знаменитых мотоциклов Гран При.
+                    </p>
+                  </div>
+                  <div id="tabs-4">
+                    <img id="img_4" src="images/moto1.jpg" width="200" height="125" alt="Мотоцикл 4" />                  
+                    <p>
+                    Яркий, обтекаемый, спроектированный для гонок, – он завораживает и приковывает к 
+					себе взгляды. От небольшого угловатого носа до гладкого искривленного хвоста – 
+					все в облике CBR600RR говорит о будущем чемпионстве. Каждый его изгиб - 
+					результат 
+					концепции дизайна «настоящей функциональности». Смысл ее в том, чтобы 
+					отказаться 
+					от всего, что не относится непосредственно к работе мотоцикла, будь то мотор, 
+					подвеска или аэродинамический обвес. От носа до заднего обтекателя каждая часть 
+					кузова и каждая деталь были тщательно изучены и перепроектированы с целью 
+					достижения наилучшей централизации массы и аэродинамики, не говоря уже о 
+					мощности и весе.
+                    </p>
+                  </div>                    
+                </div><!--Конец закладок -->
+                <div id="zoom"><img src="images/zoom.png" width="32" height="22" /></div>
+                <div id="switch"><img src="images/switch.png" width="32" height="22" /></div>                                                
+                <div id="zoomIn"><img src="images/zoom_in.png" width="16" height="22" /></div>
+                <div id="zoomOut"><img src="images/zoom_out.png" width="16" height="22" /></div>
+                <div class="clear"></div>                
+                <!--
+                <p><strong>На данный момент к прокату доступны следующие модели:</strong></p>
+				<!-- Ненумерованный список -->
+                <!--
+				<ol id="moto_models">
+					<li>Харлей Дэвидсон</li>
+					<li>Кроссовый мотоцикл</li>
+					<li>Гоночный мотоцикл</li>
+					<li>Концептуальный мотоцикл</li>
+				</ol>-->
+                
+				<h3 id="my_h3"><span class="pq">Ссылки на сайты производителей</span> и спецификации мотоциклов:</h3>
+				<ul id="my_links">
+					<li><a href="http://www.yamaha-motor.ru" target="_blank" id="superlink">Yamaha Motors Russia</a></li>
+					<li><a href="documents/yamaha_fz6.PDF">Спецификация на мотоцикл Yamaha FZ6</a></li>
+				</ul>
+				<h3>Рассчет стоимости проката мотоциклов:</h3>
+                <div id="formHide"><strong>Свернуть/Развернуть форму</strong></div>
+                <div id="formColor"><strong>Поменяй цвет фона формы</strong></div>
+                <div id="clear"></div>
+				<!-- Форма -->
+				<form action="form.php" id="my_form">
+					<div id="bigform">
+						<fieldset>
+							<!-- Правый блок формы -->
+							<div id="div_form_1">
+								<fieldset id="innerfieldset">
+									<legend>Дополнительные опции</legend>
+									<p><strong>Нужны ли аксессуары?</strong></p>
+									<div id="format">
+										<input type="checkbox" value="sh" name="dop_oprions" id="shlem" />
+										<label for="shlem">Шлем</label>
+										<input type="checkbox" value="bag" name="dop_oprions" id="bag" />
+										<label for="bag">Багажник</label>
+										<input type="checkbox" value="od" name="dop_oprions" id="od" />
+										<label for="od">Мото-одежда</label>
+									</div>
+									<p><strong>Нужна ли страховка?</strong><img src="images/help.png" width="16" height="16" id="help" /></p>                                    
+                                    <div id="dialog" title="Страховка">
+                                      <p>Если вы повредите мотоцикл во времы проката, то страховка покроет возможный ущерб.</p>
+                                    </div>                                   
+									<div id="radio">
+										<input type="radio" id="inch_yes" value="yes" name="inch" />
+										<label for="inch">Да</label>
+										<input type="radio" id="inch_no" value="no" name="inch" />
+										<label for="inch">Нет</label>
+									</div>
+								</fieldset>
+                                <fieldset id="innerfieldset2">
+									<legend>Опрос претендента</legend>
+									<div id="opros">
+										<div id="radio1">
+											<p><strong>У вас есть водительское удостоверение кат. А?</strong></p>
+											<input type="radio" id="pr1" value="yes" name="pr1" />
+											<label for="pr1">Да</label>
+											<input type="radio" id="pr2" value="no" name="pr1" />
+											<label for="pr2">Нет</label>
+										</div>
+										<div id="radio2">
+											<p><strong>Какой у Вас опыт вождения мотоцикла (если есть)?</strong></p>
+											<input type="radio" id="pr3" value="yes" name="pr2" />
+											<label for="pr3">Да</label>
+											<input type="radio" id="pr4" value="no" name="pr2" />
+											<label for="pr4">Нет</label>
+										</div>
+										<div id="radio3">
+											<p><strong>Вы ездили на скоростях больше 200 км/ч?</strong></p>
+											<input type="radio" id="pr5" value="yes" name="pr3" />
+											<label for="pr5">Да</label>
+											<input type="radio" id="pr6" value="no" name="pr3" />
+											<label for="pr6">Нет</label>
+										</div>
+										<div id="radio4">
+											<p><strong>У вас есть семья?</strong></p>
+											<input type="radio" id="pr7" value="yes" name="pr4" />
+											<label for="pr7">Да</label>
+											<input type="radio" id="pr8" value="no" name="pr4" />
+											<label for="pr8">Нет</label>
+										</div>
+										<div id="radio5">
+											<p><strong>Вы курите?</strong></p>
+											<input type="radio" id="pr9" value="yes" name="pr5" />
+											<label for="pr9">Да</label>
+											<input type="radio" id="pr10" value="no" name="pr5" />
+											<label for="pr10">Нет</label>
+										</div>
+										<p id="answerCount">Дано ответов 0 из 5</p>
+										<div id="progressbar"><div class="progress-label">Loading...</div></div>
+									</div>
+								</fieldset>
+								<input type="submit" value="Отправить заявку" id="my_button" />
+							</div>
+							<!-- Левый блок формы --> 
+							<div id="div_form_2">
+								<span>Модель:</span>
+								<select name="moto" size="1" id="motoSelect">
+									<option value="1">Харлей Дэвидсон (100$ в день)</option>
+									<option value="2">Кроссовый мотоцикл (40$ в день)</option>
+									<option value="3">Гоночный мотоцикл (150$ в день)</option>
+									<option value="4">Концептуальный мотоцикл (340$ в день)</option>
+								</select>
+								<span>Дней:</span>
+								<select name="days" size="1" id="daysSelect">
+									<option value="1">1</option>
+									<option value="2">2</option>
+								</select>
+								<p><strong>Укажите Ваш email:</strong></p>
+								<input type="text" id="email" value="Пример: you@site.ru" />
+                                <!-- Календарь -->
+                                <p><strong>Укажите дату:</strong></p>
+								<input type="text" id="date" />
+                                <!-- Конец календаря -->                                 
+								<p><strong>Ваши пожелания:</strong></p>
+								<textarea id="mytextarea"></textarea>
+                                <!-- Слайдер -->
+                                <p><strong>Сколько планируете проехать:</strong></p>
+                                <p>
+                                  <label for="amount">Расстояние:</label>
+                                  <input type="text" id="amount" readonly style="border:0; color:#000000; background-color:#E7E7F0; font-weight:bold;" />
+                                </p>                                 
+                                <div id="slider-range"></div>
+                                <!-- Конец слайдера -->
+                                <p><strong>По каким областям планируете ездить:</strong></p>
+                                <input id="tags" />
+							</div>
+						</fieldset>
+					</div>
+				</form><br />
+                
+				<!-- Конец формы -->
+                <h3 id="sale">Мотоциклы на продажу (б/у):</h3>
+                <div id="accordion">
+					<h3><a href="#">Honda DN-01 (19000$)</a></h3>
+					<div>
+						<img src="images/bu/hondaDN01.jpg" alt="" />
+						<p>
+							Honda DN-01 едва ли выглядит как обычный мотоцикл, но именно так в компании 
+							видят будущее мотоциклостроения. В журнале Motociclismo провели тест-драйв 
+							этого 
+							аппарата и вот что они пишут об этой смеси скутера и мотоцикла. Honda DN-01 - 
+							это аппарат, о котором можно сказать, что он далеко превосходит все то, что 
+							когда-либо делали в компании Honda. DN-01 не просто "иной" – он представляет 
+							совершенно новую категорию мотоциклов.
+						</p>
+					</div>
+					<h3><a href="#">Yamaha XJR 1200 (14000$)</a></h3>
+					<div>
+						<img src="images/bu/YAMAHA.jpg" width="130" height="120" alt="" />
+						<p>
+							Когда в начале 90-х на рынке начали появляться объемистые нейкеды вроде Honda 
+							CB1000, в Yamaha поняли, могут не успеть за паровозом и представили свой 
+							вариант 
+							мощного нейкеда XJR 1200, дизайн которого отзывался отголоском спорт-туреров из 
+							80-х, вроде XS Eleven (XS11, XS1100). Как любой правильный нейкед, XJR 1200 
+							обязан был комплектоваться мощным двигателем, и в Yamaha не пришлось его 
+							создавать с 
+							нуля - слава Богу, из прошлых наработок вполне подходил агрегат от FJ-1200.
+						</p>
+					</div>
+					<h3><a href="#">Aprilia NA 850GT Mana 2009 (16200$)</a></h3>
+					<div>
+						<img src="images/bu/appr.jpeg" width="140" height="124" alt="" />
+						<p>
+							Большинство производителей мототехники только мечтает о "светлом будущем" 
+							мотоциклов с автоматическими трансмиссиями, Aprilia еще в 2007 запустила 
+							революционную модель Mana NA850. А к 2009 году подготовила обновление - Mana NA 
+							850GT 2009 
+							с развитыми туристическим обтекателем и ABS. Благодаря тяговитому 76-сильному 
+							силовому агрегату и современной ходовой этот байк неплохо управляется и весело 
+							ездит. Но главная его фишка - это автоматическая трансмиссия, которая сделала 
+							мечту 
+							некоторых лентяев реальностью. Как обычно, на 850GT не обошлось без ручного 
+							режима и специального режима для плохой погоды Rain. К тому же, высокий комфорт 
+							от 
+							Aprilia Mana в фаворе не только у городских жителей, но и любителей дальних 
+							вояжей из-за туристических характеристик.
+						</p>
+					</div>
+					<h3><a href="#">Harley-Davidson FLSTF FAT BOY 2007(29600$)</a></h3>
+					<div>
+						<img src="images/bu/hd.jpeg" width="135" height="101" alt="" />
+						<p>
+							Harley-Davidson FLSTF FAT BOY - один из самых популярных мотоциклов 
+							американской торговой марки. В 2008 году модель существенно модернизирована, - 
+							был 
+							установлен новая версия двигателя Twin Cam 96B с защитой от перегрева и 
+							шестиступенчатой коробкой передач Cruise Drive. 
+							Модель FLSTF Fat Boy оснащена сплошными безспицевыми колесами с "пулевыми" 
+							(bullet-hole) отверстиями. Ширина задней шины 200 мм. Некоторая часть проводов 
+							упрятана в низком и широком руле. Fat Boy оснащен обновленным двухместным 
+							сидением 
+							(как у Softail).
+						</p>
+					</div>
+				</div>
+				<div id="forresults"></div>
+                
+				<!-- Таблица с мотоциклами на продажу -->
+                <!--
+				<h3 id="sale">Мотоциклы на продажу (б/у):</h3>
+				<table width="550" id="moto_table" title="Таблица цен на мотоциклы" class="mototable">
+					<thead>
+						<tr>
+							<th><strong>Модель</strong></th>
+							<th><strong>Цена</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Харлей Дэвидсон</td>
+							<td>25000</td>
+						</tr>
+						<tr>
+							<td>Кроссовый мотоцикл</td>
+							<td>10000</td>
+						</tr>
+                        <tr>
+							<td>Suzuki</td>
+							<td>25000</td>
+						</tr>
+                        <tr>
+							<td>Yamaha</td>
+							<td>25000</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="forresults"></div> -->
+                <!-- Галерея -->
+                <div id="switchGalery"><strong>Показать/Скрыть галерею</strong></div>
+                <div id="gallery">
+                	<div id="big"><img src="images/gal/start.jpg" alt="Старт" /></div>
+                	<div id="small">
+                		<a href="images/gal/1.jpg"><img src="images/gal/1_mini.jpg" alt="Миниатюра 1" /></a>
+                		<a href="images/gal/2.jpg"><img src="images/gal/2_mini.jpg" alt="Миниатюра 2" /></a>
+                		<a href="images/gal/3.jpg"><img src="images/gal/3_mini.jpg" alt="Миниатюра 3" /></a>
+                		<a href="images/gal/4.jpg"><img src="images/gal/4_mini.jpg" alt="Миниатюра 4" /></a>
+                	</div>
+                </div>
+                <!-- Конец галереи -->
+                <!-- Блок распродажи шлемов -->
+				<h3 id="helmetSale">Распродажа шлемов:</h3>
+				<div id="bound">
+					<div id="forHelmets" class="forhelmets">
+						<div id="helmet1" title="18900"><img src="images/helmets/1.jpg" width="180" height="160" alt="шлем 1" /></div>
+						<div id="helmet2" title="14200"><img src="images/helmets/2.jpg" width="180" height="160" alt="шлем 2" /></div>
+						<div id="helmet3" title="16100"><img src="images/helmets/3.jpg" width="180" height="160" alt="шлем 3" /></div>
+						<div id="helmet4" title="12800"><img src="images/helmets/4.jpg" width="180" height="160" alt="шлем 4" /></div>
+					</div>
+					<h3 id="helmetSale">Корзина:</h3>
+					<div id="mycart">
+					</div>
+					<div id="myclear">Шлемов в вашей корзине: <span id="helmetsCount"><strong>0</strong></span>. Итого по деньгам: <span id="helmetsSumm"><strong>0</strong></span> гривен. 
+						<form id="checkForm" action="check.php">
+							<input type="image" src="images/helmets/checkout.png" id="checkout" />
+						</form>
+					</div>
+				</div>
+            <!-- Конец блока распродажи шлемов -->
+                <h3>Помощь в подборе мотоцикла</h3>                
+                <div id="helpDiv">
+                    <p><strong>Отсортируйте характеристики по важности:</strong></p>                    
+                    <ul id="sortable">
+                      <li class="ui-state-default">Экономичность</li>
+                      <li class="ui-state-default">Максимальная скорость</li>
+                      <li class="ui-state-default">Возможность езды вдвоем</li>
+                      <li class="ui-state-default">Престижность бренда</li>
+                      <li class="ui-state-default">Современность модели</li>
+                      <li class="ui-state-default">Большой объем багажника</li>
+                      <li class="ui-state-default">Комфортная езда</li>
+                      <li class="ui-state-default">Низкая стоимость аренды</li>
+                    </ul>                    
+                </div>
+                <div id="helpColor">
+                    <p><strong>Выберете предпочтительный цвет мотоцикла:</strong></p>
+                    <ol id="selectable">
+                      <li class="ui-state-default"><img src="images/red.jpg" width="220" height="148" /></li>
+                      <li class="ui-state-default"><img src="images/green.jpg" width="220" height="148" /></li>
+                      <li class="ui-state-default"><img src="images/blue.jpg" width="220" height="148" /></li>
+                      <li class="ui-state-default"><img src="images/black.jpg" width="220" height="148" /></li>                      
+                    </ol>
+                </div>
+                <form id="checkForm" action="check.php">
+						<input type="image" src="images/bike.jpg" id="podbor" />
+			    </form>
+			</div><!-- Конец блока forbody -->
+			<!-- Блок футера -->
+			<div id="forfooter">
+				<img src="images/footer.jpg" width="900" height="67" alt="Футер" title="Производители" />
+			</div>
+			<!-- Конец футера -->
+		</div>        
+	</body>
+</html>
